@@ -1,6 +1,6 @@
 use chrono::prelude::{DateTime, Local};
 use serde::{Deserialize, Serialize};
-#[derive(Debug,Deserialize, Serialize)]
+#[derive(Debug,Deserialize, Serialize, Clone)]
 pub struct ToDo{
     pub id: u64,
     pub title: String,
