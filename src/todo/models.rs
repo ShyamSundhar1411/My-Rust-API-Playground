@@ -12,7 +12,7 @@ pub struct ToDo{
 impl ToDo{
     #[allow(dead_code)]
     pub fn new(id: u64, title: String, description: String) -> Self{
-        Self { id: (id), title: (title), description: (description), is_done: Some((false)), created_at: Some((Local::now())) }
+        Self { id: id, title: title, description: description, is_done: Some(false), created_at: Some(Local::now()) }
     }
 }
 
